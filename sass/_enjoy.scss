@@ -1,0 +1,27 @@
+.enjoy {
+  &__section {
+    margin-top: 18rem;
+    display: block;
+    color: #fff;
+    padding: 19.5rem 35.5rem;
+    background: url("../assests/images/enjoy.png") no-repeat center / cover;
+  }
+  &__content {
+    padding: 8rem 9rem;
+    margin: 0 auto;
+    width: 73rem;
+    height: 58rem;
+
+    text-align: center;
+    border: 4px solid $primary;
+    background-color: rgba(29, 29, 35, 0.8);
+  }
+  &__title {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+  &__desc {
+    font-size: 3.3rem;
+    line-height: 4rem;
+  }
+}

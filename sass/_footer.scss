@@ -1,0 +1,46 @@
+.footer {
+  padding: 8rem 0 10rem;
+  background-color: #35353b;
+  &__container {
+    text-align: center;
+  }
+  &__logo {
+    width: 38.6rem;
+    height: 8rem;
+    margin: 0 auto;
+    margin-bottom: 5.8rem;
+  }
+  &__nav {
+    @include flex(center, center);
+    gap: 4.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 4.5rem;
+  }
+  &__link {
+    color: #fff;
+    transition: all 0.2s linear;
+    &:hover {
+      color: $primary;
+    }
+  }
+  &__socials {
+    @include flex(center, center);
+    gap: 4.5rem;
+    &-item {
+      @include flex(center, center);
+      width: 4.6rem;
+      height: 4.6rem;
+      border-radius: 50%;
+
+      font-size: 2.2rem;
+      color: #35353b;
+      background-color: #fff;
+      transition: all 0.2s linear;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

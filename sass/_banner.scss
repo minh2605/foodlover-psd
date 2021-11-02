@@ -1,0 +1,61 @@
+.banner {
+  &__section {
+    position: relative;
+    padding: 24rem 0 12rem;
+    background: url("../assests/images/banner_bg.png") no-repeat center / cover;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $background;
+      opacity: 0.9;
+    }
+  }
+  &__container {
+    @include flex(center, center);
+    gap: 6rem;
+    height: auto;
+    position: relative;
+    padding: 0 4.5rem;
+  }
+  &__img {
+    width: 50%;
+    height: auto;
+  }
+  &__content {
+    width: 50%;
+    padding-right: 19rem;
+  }
+  &__title {
+    font-size: 6.6rem;
+    color: $primary;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+  }
+  &__desc {
+    font-weight: 100;
+    font-size: 2.5rem;
+    line-height: 1.2;
+
+    word-break: keep-all;
+    color: $secondary;
+    margin-bottom: 3.5rem;
+  }
+
+  &__btn {
+    font-size: 2.5rem;
+    font-family: mainFont;
+    padding: 2.5rem 4rem;
+    border-radius: 5px;
+    background: $primary;
+    transition: all 0.2s linear;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

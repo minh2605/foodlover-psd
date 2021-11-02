@@ -1,0 +1,51 @@
+.menu {
+  $gap: 4.5rem;
+  $items: 3;
+  &__section {
+    padding-top: 18rem;
+  }
+  &__title {
+    font-size: 5rem;
+    margin-bottom: 9rem;
+    color: #fff;
+    text-align: center;
+  }
+  &__list {
+    @include flex(stretch, space-between);
+    gap: 0 $gap;
+  }
+  &__item {
+    width: calc(100% - (#{($items - 1) * $gap}) / #{$items});
+    color: $primary;
+
+    &-img {
+      width: 100%;
+      height: 37rem;
+      margin-bottom: 4rem;
+      overflow: hidden;
+      img {
+        transition: all 0.4s linear;
+      }
+
+      &:hover {
+        img {
+          cursor: pointer;
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    &-title {
+      font-size: 2.8rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+    &-desc {
+      line-height: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    &-price {
+      font-size: 2.4rem;
+    }
+  }
+}

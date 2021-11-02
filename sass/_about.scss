@@ -1,0 +1,26 @@
+.about {
+  &__section {
+    padding-top: 12rem;
+  }
+  &__container {
+    @include flex(center);
+  }
+  &__img {
+    width: 65rem;
+    height: 65rem;
+    flex-shrink: 0;
+    margin-right: 4.5rem;
+  }
+  &__content {
+    color: $secondary;
+  }
+  &__title {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+  }
+  &__desc {
+    font-size: 3.3rem;
+    font-weight: normal;
+    line-height: 1.2;
+  }
+}

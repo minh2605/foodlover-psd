@@ -1,0 +1,30 @@
+.gallery {
+  $gap: 4.5rem;
+  &__section {
+    padding-top: 18rem;
+  }
+  &__title {
+    font-size: 5rem;
+    margin-bottom: 10rem;
+    text-align: center;
+    color: #fff;
+  }
+  &__list {
+    @include flex(center, space-between, wrap);
+    gap: 3.5rem $gap;
+  }
+  &__item {
+    flex-basis: calc((100% - #{$gap * 2}) / 3);
+    cursor: pointer;
+    overflow: hidden;
+    img {
+      transition: all 0.4s linear;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

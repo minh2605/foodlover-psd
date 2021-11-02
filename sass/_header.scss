@@ -1,0 +1,45 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: $background;
+  &__container {
+    padding: 4rem 0 2rem;
+  }
+  &__nav {
+    @include flex(center);
+    gap: 22rem;
+    text-transform: uppercase;
+    ul {
+      @include flex(center);
+      gap: 5rem;
+      li {
+        letter-spacing: 1px;
+        a {
+          transition: all 0.2s linear;
+        }
+        &:hover {
+          a {
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    &-left {
+      li {
+        &:first-child {
+          a {
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    &-link {
+      color: #fff;
+    }
+  }
+}
